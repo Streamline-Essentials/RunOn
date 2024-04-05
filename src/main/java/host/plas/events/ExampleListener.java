@@ -18,6 +18,6 @@ public class ExampleListener implements BaseEventListener {
     public void onExampleEvent(ExampleEvent event) {
         // Do something with the event.
         ExampleModule.getInstance().logInfo("Example event fired!"); // Log something to the console.
-        ExampleModule.getInstance().logInfo("Player: " + event.getEvent().getResource().getLatestName()); // Log the player's name.
+        ExampleModule.getInstance().logInfo("Player: " + event.getEvent().getSender().getCurrentName()); // Log the player's name.
     }
 }

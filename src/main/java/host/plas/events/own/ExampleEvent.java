@@ -5,8 +5,9 @@ import lombok.Setter;
 import net.streamline.api.events.StreamlineEvent;
 import net.streamline.api.events.server.LoginCompletedEvent;
 
+@Setter
+@Getter
 public class ExampleEvent extends StreamlineEvent {
-    @Getter @Setter
     private LoginCompletedEvent event;
 
     public ExampleEvent(LoginCompletedEvent event) {

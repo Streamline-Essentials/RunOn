@@ -3,8 +3,6 @@ package host.plas.configs;
 import host.plas.ExampleModule;
 import tv.quaint.storage.resources.flat.simple.SimpleConfiguration;
 
-import java.io.File;
-
 public class ExampleConfig extends SimpleConfiguration {
     public ExampleConfig() {
         super("config.yml", // The name of the file.

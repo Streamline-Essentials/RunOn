@@ -1,6 +1,3 @@
-import org.gradle.api.JavaVersion
-import org.gradle.api.tasks.wrapper.Wrapper
-
 plugins {
     id 'java'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
@@ -61,12 +58,12 @@ dependencies {
     compileOnly 'net.luckperms:api:5.4'
 
     // StreamlineCore
-    compileOnly 'com.github.streamline-essentials.StreamlineCore:StreamlineCore-API:main-SNAPSHOT'
-    annotationProcessor 'com.github.streamline-essentials.StreamlineCore:StreamlineCore-API:main-SNAPSHOT'
+    compileOnly 'com.github.Streamline-Essentials.StreamlineCore:StreamlineCore-API:main-SNAPSHOT'
+    annotationProcessor 'com.github.Streamline-Essentials.StreamlineCore:StreamlineCore-API:main-SNAPSHOT'
 
     if (rootProject.ext.needs_bapi) {
-        compileOnly 'com.github.streamline-essentials.StreamlineCore:StreamlineCore-BAPI:main-SNAPSHOT'
-        annotationProcessor 'com.github.streamline-essentials.StreamlineCore:StreamlineCore-BAPI:main-SNAPSHOT'
+        compileOnly 'com.github.Streamline-Essentials.StreamlineCore:StreamlineCore-BAPI:main-SNAPSHOT'
+        annotationProcessor 'com.github.Streamline-Essentials.StreamlineCore:StreamlineCore-BAPI:main-SNAPSHOT'
     }
 }
 
